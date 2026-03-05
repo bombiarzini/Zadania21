@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Zadanie21_3.MainPage">
+
+    <ScrollView>
+        
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            HorizontalOptions="Center"
+            >
+            <Grid RowDefinitions="150,150,150"
+                  ColumnDefinitions="150,150,150">
+                
+            
+            
+            <Label
+                Text="Imie: "
+                Grid.Row="0"
+                Grid.Column="0"
+                />
+            <Entry
+                MaxLength="50"
+                Keyboard="Default"
+                x:Name="Imie"
+                Placeholder="Wpisz imie" 
+                Grid.Row="0"
+                Grid.Column="0"
+                HeightRequest="40"
+                WidthRequest="140"
+                />
+
+            <Label
+               Text="Email: "
+                Grid.Row="0"
+                Grid.Column="1"
+            /> 
+            <Entry
+                Keyboard="Email"
+                x:Name="Email"
+                Placeholder="Wpisz email"
+                Grid.Row="0"
+                Grid.Column="1"
+                HeightRequest="40"
+                WidthRequest="140"
+                />
+
+            <Label
+               Text="Haslo: "
+                Grid.Row="0"
+                Grid.Column="2"
+            />
+            <Entry
+                IsPassword="True"
+                MaxLength="50"
+                x:Name="Haslo"
+                Placeholder="Wpisz haslo"
+                Grid.Row="0"
+                Grid.Column="2"
+                HeightRequest="40"
+                WidthRequest="140"
+                
+                />
+
+            <Label
+               Text="Data urodzenia: "
+                Grid.Row="1"
+                Grid.Column="0"
+            />
+            
+            <DatePicker
+                x:Name="DataUrodzenia"
+                Format="D"
+                MinimumDate="1950-01-01"
+                MaximumDate="2006-12-31"
+                Grid.Row="1"
+                Grid.Column="0"
+                />
+
+               
+
+                <Picker
+                x:Name="Plec"
+                Title="Wybierz płeć"
+                Grid.Row="1"
+                Grid.Column="1"
+                HeightRequest="70"
+                WidthRequest="140"
+                >
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Kobieta</x:String>
+                        <x:String>Mężczyzna</x:String>
+                        <x:String>Inna</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Label
+                 Text="Wyrażam zgodę na przetwarzanie danych osobowych"
+                  FontSize="15"
+                  VerticalOptions="Center"
+                  Margin="10,0,0,0"
+                  Grid.Row="1"
+                  Grid.Column="2"
+                  HorizontalOptions="Fill"  
+            />
+            <CheckBox
+                x:Name="Zgoda" 
+                Grid.Row="1"
+                Grid.Column="2"
+                IsChecked="False"
+                HorizontalOptions="Start"
+                
+                />
+            <Button
+                Text="Zarejestruj"
+                Clicked="Button_Clicked"
+                Grid.Row="2"
+                Grid.Column="1"
+                 HeightRequest="40"
+                 WidthRequest="140"
+                />
+
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
