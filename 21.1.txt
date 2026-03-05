@@ -1,0 +1,8 @@
+21.1
+1 do wpisywania adresow
+2 przycisk sluzy do czyszczenia wpisanego
+tekstu z entry a pojawia się wtedy kiedy mamy
+wpisany tekst
+3 do szukania bo returntype=go
+4 nie może, ponieważ max length wynosi 255
+5 https://example.com
