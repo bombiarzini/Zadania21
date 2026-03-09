@@ -1,0 +1,18 @@
+dokumentacja 21.4
+***********************************************
+nazwa funkcji: Wybor
+opis funkcji: W tej funkcji mamy ifa, który
+poprzez selectedindex zmienia liste priorytet, w zaleznosci co klikniemy to będzie inna lista a jeśli nic nie wybierzemy lista priorytet nie będzie się wyswietlac
+
+parametry:-
+
+zwracany typ i opis:-
+
+nazwa funkcji: ButtonWyslij
+opis funkcji:  sprawdza czy wszystkie pola sa 
+zaznaczone jeśli tak to wyswietla alert  
+parametry:-
+
+zwracany typ i opis:-
+autor: Kacper Wandzak
+***********************************************
