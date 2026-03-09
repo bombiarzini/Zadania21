@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Zadanie21_4.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            
+            >
+            <Label
+                Text="Skontaktuj sie z nami"
+                />
+
+            <Label
+                Text="Imie"
+                />
+            <Entry
+               MaxLength="100"
+                />
+
+            <Label
+                Text="Email"
+                />  
+            <Entry
+                Keyboard="Email"
+                />
+            <Picker
+                x:Name="Temat"
+                Title="Temat"
+                SelectedIndexChanged="Wybor"
+                >
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Reklamacja</x:String>
+                        <x:String>Podziekowanie</x:String>
+                        <x:String>Pytanie</x:String>
+                        <x:String>Inne</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+
+            </Picker>
+            <Editor
+                    x:Name="Tresc"
+                    AutoSize="TextChanges"
+                    MaxLength="1000"
+                    Placeholder="Wiadomość"
+                    />
+            <Picker
+                x:Name="Priorytet"
+                Title="Priorytet"
+                >
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Niski</x:String>
+                        <x:String>Sredni</x:String>
+                        <x:String>Wysoki</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <CheckBox
+               IsChecked="False"
+                
+               />
+            <Label
+                Text="Wyslij mi kopie wiadomosci na email"
+                VerticalOptions="Center"
+                
+/>
+
+            <Button
+                    Text="Wyślij"
+                    x:Name="Wyslij"
+                    Clicked="ButtonWyslij"
+                    />
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
