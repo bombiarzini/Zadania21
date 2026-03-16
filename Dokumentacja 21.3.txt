@@ -1,0 +1,9 @@
+Dokumentacja 21.3
+
+/*
+nazwa funkcji: button_clicked
+opis funkcji: sprawdza ifem czy picker zgoda jest wcisniety, jeśli nie jest to wyswietla komunikat o treści nie można się zarejestrować bez zgody
+parametry: -
+zwracany typ i opis: -
+autor: Kacper Wandzak
+*/
