@@ -1,0 +1,16 @@
+Dokumentacja 21.2
+
+/*
+nazwa funkcji: onbuttonclicked
+opis funkcji: wyswietla alert o zalogowaniu jeśli
+użytkownik kliknie przycisk
+parametry: -
+zwracany typ i opis: -
+
+nazwa funkcji: entry_textchanged
+opis funkcji: w srodku funkcji jest if który sprawdza czy email i password sa puste, jeśli sa to przycisk nie jest widoczny, jeśli jest w nich tekst przycisk pojawia sie
+parametry: email, password
+zwracany typ i opis: -
+
+autor: Kacper Wandzak
+*/
